@@ -20,7 +20,7 @@ df.drop(df[df['position_name'].str.contains('实习')].index, inplace=True)
 
 # 由于CSV文件内的数据是字符串形式,先用正则表达式将字符串转化为列表,再取区间的均值
 pattern = '\d+'
-df['position_experience'] = df['position_requ'].str.findall(pattern)
+df['position_experience'] = df['work_year'].str.findall(pattern)
 
 avg_work_year = []
 for i in df['position_experience']:
