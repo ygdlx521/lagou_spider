@@ -1,8 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import time
-import random
-import pandas as pd
 
 # 爬取数据的字段名
 field_name = ['position_id', 'position_salary', 'position_name', 'position_url', 'position_city', 'position_area',
